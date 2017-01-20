@@ -15,7 +15,7 @@
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
             $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top - 50
             }, 1000);
             return false;
         }
@@ -24,27 +24,41 @@
     });
 
     </script>   
+    <style>
+    /*.anchor { padding-top: 90px; }*/
+    </style>
 </head>
-<body>       
-    <div class="ui container">
-        <div class="ui left fixed vertical menu">        
-            <div class="item">
-                <img class="ui medium image circular" src="./images/profile2.png">
+<body>           
+            <div class="ui top fixed menu fluid">
+                <a href="#top" class="item"><i class="icon home"></i></a>
+                <!--<a href="#top" class="item"><img class="ui mini image circular" src="./images/profile2.png"></a>-->
+                <a href="#research" class="item">Research Interests</a>
+                <a href="#education" class="item">Education</a>
+                <a href="#career" class="item">Career</a>
+                <a href="#theses" class="item">Theses</a>
+                <a href="#skills" class="item">Skills</a>
             </div>
-            <a href="#research" class="item">Research Interests</a>
-            <a href="#education" class="item">Education</a>
-            <a href="#career" class="item">Career</a>
-            <!--<a href="#theses" class="item">Theses</a>-->
-            <a href="#skills" class="item">Skills</a>
-        </div>     
-        <div class="ui right aligned text container fluid">        
-            <p>
-                <h1 class="ui aligned">Thomas Ortner</h1>
-                <h3 class="ui aligned">VRVis Zentrum für Virtual Reality und<br> Visualisierung Forschungs-GmbH</h1>
-            </p>
-            
-        </div>
+        <br>
+        <br>
+        <br>
+        <div class="ui text container fluid">
+            <div id="top" class="ui two column grid fluid">
+                <div class="column">
+                    <div class="item">
+                        <img class="ui medium image rounded rectangle" src="./images/profile2.png">
+                    </div>
+                </div>
+
+                <div class="column right aligned">
+                    <p>
+                        <h1 class="ui aligned">Thomas Ortner</h1>
+                        <h3 class="ui aligned">VRVis Zentrum für Virtual Reality und<br> Visualisierung Forschungs-GmbH</h3>
+                        <div class="ui icon large label"><i class="icon mail"></i> ortner@vrvis.at</div>
+                    </p>
+                </div>
+            </div>
         
+        <br>        
         <div class="ui justified text container fluid"> 
             <p>Thomas Ortner is part of the 'Smart Worlds' area at the VRVis Research Center in the group 'Geospatial Rendering'. Currently he is doing his PhD combining the two worlds of Visual Analytics and Real-Time Rendering and is project manager in the Exomars Project.</p>
 
