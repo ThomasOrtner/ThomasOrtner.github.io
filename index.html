@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
 
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.js"></script>
+    <!--<script data-main="app" src="lib/require.js"></script>-->
     <script>
     
     $(function() {
@@ -23,6 +24,17 @@
     });
     });
 
+    // requirejs(["node_modules\bibtex-parse-js\bibtexParse"], function(util) {
+    // console.log(util);
+    // });
+
+
+    // var bibtexParse = require('bibtex-parse-js');
+ 
+    // var sample = bibtexParse.toJSON('@article{sample1,title={sample title}}');
+ 
+    // console.log(sample);
+
     </script>   
     <style>
     /*.anchor { padding-top: 90px; }*/
@@ -35,8 +47,9 @@
                 <a href="#research" class="item">Research Interests</a>
                 <a href="#education" class="item">Education</a>
                 <a href="#career" class="item">Career</a>
-                <a href="#theses" class="item">Theses</a>
+                <!--<a href="#theses" class="item">Theses</a>-->
                 <a href="#skills" class="item">Skills</a>
+                <a href="#publications" class="item">Publications</a>
             </div>
         <br>
         <br>
@@ -60,7 +73,10 @@
         
         <br>        
         <div class="ui justified text container fluid"> 
-            <p>Thomas Ortner is part of the 'Smart Worlds' area at the VRVis Research Center in the group 'Geospatial Rendering'. Currently he is doing his PhD combining the two worlds of Visual Analytics and Real-Time Rendering and is project manager in the Exomars Project.</p>
+            <p>Thomas Ortner is part of the 'Smart Worlds' area at the 
+            <a href="http://www.vrvis.at">VRVis Research Center</a>
+            in the group 'Geospatial Rendering'. Currently, he is doing his PhD combining the two worlds of Visual Analytics and Real-Time Rendering and is project manager in the <a href="https://www.vrvis.at/research/projects/exomars-pancam/">Exomars</a> and the <a href="https://www.vrvis.at/research/projects/mastcam-z/">MastCamZ</a> project.
+            </p>
 
             <!--Research-->
             <h4 id="research" class="ui horizontal divider header">
@@ -153,12 +169,63 @@
             </table>
 
             <!--Carrer-->
-            <h4 class="ui horizontal divider header">
+            <h4 id="career" class="ui horizontal divider header">
                 <i class="line chart icon"></i>
                 Career
             </h4>
 
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+            <table class="ui table">
+                <tbody>
+                <tr>
+                    <td class="collapsing top aligned">
+                    <!--<i class="folder icon"></i> node_modules-->
+                    2016 - present
+                    </td>    
+                    <td class="left aligned">
+                        <b>Project manager</b>, VRVis, Vienna, PRo3D Viewer.<br>
+                        Extended responsibilities in project planning,design and realization of features, and communication of results regarding the PRo3D Viewer.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="collapsing top aligned">
+                    <!--<i class="folder icon"></i> node_modules-->
+                    2012 - present
+                    </td>    
+                    <td style="text-align: justify">
+                        <b>Software Engineer & Researcher</b>, VRVis, Vienna, PRo3D Viewer.<br>
+                        In the context of several projects concerned with the exploration of the Mars (ExoMars, PRoViDE, MastCamZ) we are developing the 3D real-time rendering application PRo3D [4] which allows the exploration of and interaction with high resolution, digitally-reconstructed 3D surfaces provided by Joanneum Research Graz. We support interactions for virtual geological annotations, which are already extensively used by domain scientists [3, 6] and are currently working on utilizing PRo3D for planning rover trips on the Martian surface.
+                    </td>
+                </tr>       
+                <tr>
+                    <td class="collapsing top aligned">
+                    <!--<i class="folder icon"></i> node_modules-->
+                    2012 - 2016
+                    </td>    
+                    <td style="text-align: justify">
+                        <b>Ph.D. Student</b>, VRVis, Vienna, VISAR - Visual Analytics and Rendering.<br>
+                        This fundamental research project (FWF P24597-N23) was concerned with the seamless integration of 3D spatial and non-spatial data, by combining 3D real-time visualizations and information visualization views. This integration becomes increasingly relevant in fields, such as, civil engineering, urban planning, or disaster management, to only name a few. We published a conceptual framework [2] and two design studies in the context of 3D visibility analysis [1] and lighting design [5].
+                    </td>
+                </tr>
+                <tr>
+                    <td class="collapsing top aligned">                   
+                    2008 - 2012
+                    </td>    
+                    <td style="text-align: justify">
+                       <b>Software Engineer & Researcher</b>, VRVis, Vienna, Dibit7.<br>
+                       Development of the core visualization component within a tunnel documentation application in collaboration with Dibit Messtechnik GmbH. and Joanneum Research Graz. This involved the out-of-core rendering of and the interaction with large triangulated datasets at interactive frame rates, as well as appropriate visualizations of additional abstract data and domain-specific interaction metaphors [8, 7].
+                    </td>
+                </tr>
+                <tr>
+                    <td class="collapsing top aligned">                   
+                    2005–2007
+                    </td>    
+                     <td style="text-align: justify">
+                        <b>Various Internships</b>, VRVis, Vienna.<br>
+                        (1) Design and implementation of an out-of-core point rendering framework. (2) Supporting migration of a 3D real-time rendering application from VC++ 4.0 to VC++ 6.0. (3) Design and implementation of a mesh splitting algorithm.                   
+                    </td>
+                </tr>  
+                </tbody>
+            </table>
 
             <!--Theses
             <h4 id="theses" class="ui horizontal divider header">
@@ -170,11 +237,120 @@
 
             <!--Skills-->
             <h4 id="skills" class="ui horizontal divider header">
-                <i class="rocket icon"></i>
+                <i class="wizard icon"></i>
                 Skills
+            </h4>                       
+           
+            <div class="ui segment">
+                <div class="ui relaxed divided list">
+                    <div class="item">
+                        <div class="content">
+                            <div class="header">Professional</div>
+                            3D Real-Time Rendering, Information Visualization & Visual Analytics, Domain Modelling, Software Design & Architecture, Functional Programming
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="header">Programming</div>
+                            C#, JavaScript/TypeScript, F#, C++
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="header">Frameworks</div>
+                            D3.js, DirectX/OpenGL, HLSL/GLSL, XNA, WPF, .NET, CUDA
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="header">Languages</div>
+                            English (fluent), German (native)
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="header">Other</div>
+                            JIRA, Confluence, Scrum, GIT/SVN, Latex
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--Publications-->
+            <h4 id="publications" class="ui horizontal divider header">
+                <i class="file text outline icon"></i>
+                Publications
             </h4>
             
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa strong. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede link mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+            <table class="ui table">
+                <tbody>
+                <tr>
+                    <td class="collapsing top aligned">                    
+                    [1]
+                    </td>    
+                    <td style="text-align: justify">
+                        <b>Ortner, T</b>, Sorger, J, Steinlechner, H, Hesina, G, Piringer, H, Gröller, E, “Vis-A-Ware: Integrating Spatial and Non-Spatial Visualization for Visibility-Aware Urban Planning”. In: <i>IEEE Transactions on Visualization and Computer Graphics 2016 </i> (2016).
+                    </td>
+                </tr>
+                <tr>
+                    <td class="collapsing top aligned">
+                    [2]
+                    </td>    
+                      <td style="text-align: justify">
+                        <b>Ortner, T</b>, Sorger, J, Piringer, H, Hesina, G, Gröller, E, “Visual Analytics and Rendering for Tunnel Crack Analysis”. In: <i>The Visual Computer 32.6</i> (2016).
+                    </td>
+                </tr>       
+                <tr>
+                    <td class="collapsing top aligned">
+                    <!--<i class="folder icon"></i> node_modules-->
+                    [3]
+                    </td>    
+                     <td style="text-align: justify">
+                        Barnes, R, Gupta, S, Giordano, M, Morley, J. G, Muller, J. P, Tao, Y, Sprinks, J, Traxler, C, Hesina, G , <b>Ortner, T</b>, Sander, K, Nauschnegg, B, Paar, G, Willner, K, Pajdla, T, “Geological interpretation and analysis of surface based, spatially referenced planetary imagery data using PRoGIS 2.0 and PRo3D”. In: <i>Proceedings of EPSC 2015</i> (2015).
+                    </td>
+                </tr>
+                <tr>
+                    <td class="collapsing top aligned">                    
+                    [4]
+                    </td>    
+                     <td style="text-align: justify">
+                        Barnes, R, Gupta, S, <b>Ortner, T</b>, Huber, B, Paar, G, Muller, J, Giordano, M, Willner, K, Hesina, G, Traxler, C, “PRo3D: A tool for high resolution rendering and geological analysis of Martian rover-derived Digital Outcrop Models”. In: <i>Proceedings of AGU 2015</i> (2015).
+                    </td>
+                </tr>
+                <tr>
+                    <td class="collapsing top aligned">                    
+                    [5]
+                    </td>    
+                     <td style="text-align: justify">
+                        Sorger, J , <b>Ortner, T</b>, Luksch, C, Schwärzler, M, Gröller, E, Piringer, H, “LiteVis: Integrated Visualization for Simulation-Based Decision Support in Lighting Design”. In: <i>IEEE Transactions on Visualization and Computer Graphics / Proceedings of IEEE VAST 2015</i>. (2015).
+                    </td>
+                </tr>
+                <tr>
+                    <td class="collapsing top aligned">                    
+                    [6]
+                    </td>    
+                     <td style="text-align: justify">
+                        Traxler, C, Hesina, G , <b>Ortner, T</b>, “PRo3D – a tool for remote exploration and visual analysis of multi-resolution planetary terrains”. In: <i>Proceedings of EPSC 2015.</i> (2015).
+                    </td>
+                </tr>
+                <tr>
+                    <td class="collapsing top aligned">                    
+                    [7]
+                    </td>    
+                     <td style="text-align: justify">
+                        <b>Ortner, T</b>, Hesina, G, Kontrus, H, Glatzl, R, “Hochauflösende flächendeckende Dokumentation von Tunneloberflächen”. In: <i>Proceedings of Symposium und Fachmesse für Angewandte Geoinformatik (AGIT 2011), pp. 914–923.</i> (2011).
+                    </td>
+                </tr>
+                <tr>
+                    <td class="collapsing top aligned">                    
+                    [8]
+                    </td>    
+                     <td style="text-align: justify">
+                        <b>Ortner, T</b>, Paar, G, Hesina, G, Tobler, R, Nauschnegg, B, “Towards True Underground Infrastructure Surface Documentation”. In: <i>Proceedings of CORP 2010 , pp. 783–792.</i> (2010).
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
